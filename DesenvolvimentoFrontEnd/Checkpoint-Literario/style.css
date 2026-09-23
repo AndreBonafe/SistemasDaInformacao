@@ -31,3 +31,93 @@
     --espaco-5: 2rem;
     --espaco-6: 3rem;
 }
+
+.container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+
+.col-12 {
+    grid-column: span 12;
+}
+
+.col-6 {
+    grid-column: span 6;
+}
+
+.col-4 {
+    grid-column: span 4;
+}
+
+.col-3 {
+    grid-column: span 3;
+}
+
+/* Celulares pequenos */
+@media (max-width: 479px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .col-12,
+    .col-6,
+    .col-4,
+    .col-3 {
+        grid-column: 1;
+    }
+}
+
+/* Celulares */
+@media (min-width: 480px) and (max-width: 767px) {
+    .grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .col-12,
+    .col-6,
+    .col-4,
+    .col-3 {
+        grid-column: span 4;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .grid {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .col-6 {
+        grid-column: span 4;
+    }
+
+    .col-4,
+    .col-3 {
+        grid-column: span 4;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .grid {
+        grid-template-columns: repeat(12, 1fr);
+    }
+}
+
+/* Desktops panorâmicos */
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1320px;
+    }
+
+    .grid {
+        grid-template-columns: repeat(12, 1fr);
+        gap: 1.5rem;
+    }
+}
