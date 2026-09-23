@@ -33,10 +33,8 @@ function updateHeaderAriaCurrent(route) {
 }
 
 function navigateIntoSection(section) {
-	const sectionEl = document.querySelector(`#${section}`);
-	if (sectionEl) {
-		sectionEl.scrollIntoView(false)
-	}
+	section ? document.querySelector(`#${section}`)?.scrollIntoView(false) :
+	document.getElementsByTagName('body')[0].scrollIntoView(true);
 }
 
 function renderizar() {
@@ -48,9 +46,7 @@ function renderizar() {
 
 	app.innerHTML = router(routeName, section);
 	updateHeaderAriaCurrent(rota);
-	if (section) {
-		navigateIntoSection(section)
-	}
+	navigateIntoSection(section);
 }
 
 window.addEventListener("DOMContentLoaded", renderizar);
