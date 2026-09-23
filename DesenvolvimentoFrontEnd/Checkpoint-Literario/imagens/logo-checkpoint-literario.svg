@@ -1,0 +1,91 @@
+<svg
+    xmlns="http://www.w3.org/2000/svg"
+    viewBox="0 0 520 120"
+    role="img"
+    aria-labelledby="logo-title logo-desc"
+>
+    <title id="logo-title">Checkpoint Literário</title>
+    <desc id="logo-desc">
+        Livro aberto combinado com símbolos de controle de videogame
+    </desc>
+
+    <!-- Livro -->
+    <path
+        d="M25 25
+           C60 18, 90 23, 120 43
+           V98
+           C90 78, 60 74, 25 82
+           Z"
+        fill="#F6E8C8"
+        stroke="#252525"
+        stroke-width="5"
+        stroke-linejoin="round"
+    />
+
+    <path
+        d="M215 25
+           C180 18, 150 23, 120 43
+           V98
+           C150 78, 180 74, 215 82
+           Z"
+        fill="#F6E8C8"
+        stroke="#252525"
+        stroke-width="5"
+        stroke-linejoin="round"
+    />
+
+    <!-- Lombada -->
+    <path
+        d="M120 43 V98"
+        fill="none"
+        stroke="#252525"
+        stroke-width="5"
+        stroke-linecap="round"
+    />
+
+    <!-- Direcional -->
+    <rect
+        x="53"
+        y="43"
+        width="18"
+        height="48"
+        rx="4"
+        fill="#6750A4"
+    />
+
+    <rect
+        x="38"
+        y="58"
+        width="48"
+        height="18"
+        rx="4"
+        fill="#6750A4"
+    />
+
+    <!-- Botões -->
+    <circle cx="171" cy="56" r="9" fill="#E34B4B"/>
+    <circle cx="190" cy="73" r="9" fill="#4B8BE3"/>
+
+    <!-- Nome -->
+    <text
+        x="245"
+        y="55"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="34"
+        font-weight="700"
+        fill="#252525"
+    >
+        Checkpoint
+    </text>
+
+    <text
+        x="245"
+        y="91"
+        font-family="Arial, Helvetica, sans-serif"
+        font-size="29"
+        font-weight="600"
+        fill="#6750A4"
+    >
+        Literário
+    </text>
+</svg>

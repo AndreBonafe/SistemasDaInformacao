@@ -1,0 +1,3 @@
+# Objetivos Gerais
+
+Desenvolver competências abrangentes em desenvolvimento front-end para web, capacitando os estudantes a criar interfaces modernas, responsivas e acessíveis utilizando HTML5, CSS3 e JavaScript, através do domínio de ferramentas de versionamento, metodologias de deploy e boas práticas de desenvolvimento que constituem a base para a construção de experiências web profissionais e escaláveis.
