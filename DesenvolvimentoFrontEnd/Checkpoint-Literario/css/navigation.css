@@ -1,0 +1,156 @@
+.cabecalho {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+
+    border-bottom: 1px solid var(--cor-borda);
+}
+
+.cabecalho__conteudo {
+    min-height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--espaco-3);
+}
+
+.logo img {
+    width: 230px;
+}
+
+.menu-principal > ul {
+    display: flex;
+    align-items: center;
+
+    gap: var(--espaco-3);
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: color 0.2s ease;
+}
+
+.menu-principal a:hover,
+.menu-principal a:focus-visible {
+    color: var(--cor-primaria);
+}
+
+.menu-principal a[aria-current="page"] {
+    color: var(--cor-primaria);
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.menu-hamburguer {
+    display: none;
+
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.tem-submenu {
+    position: relative;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    min-width: 180px;
+
+    display: none;
+
+    margin: 0;
+    padding: var(--espaco-1);
+
+    list-style: none;
+
+    background: var(--cor-superficie);
+
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius-sm);
+
+    box-shadow: var(--sombra-suave);
+}
+
+.tem-submenu:hover .submenu,
+.tem-submenu:focus-within .submenu {
+    display: block;
+}
+
+.submenu a {
+    display: block;
+
+    padding:
+        var(--espaco-1)
+        var(--espaco-2);
+
+    border-radius: var(--radius-sm);
+}
+
+.submenu a:hover {
+    background-color: var(--cor-secundaria-clara);
+}
+
+@media (max-width: 768px) {
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu-principal {
+        display: none;
+
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+
+        padding: var(--espaco-2);
+
+        background: var(--cor-superficie);
+
+        border-bottom: 1px solid var(--cor-borda);
+    }
+
+    .menu-toggle:checked
+    + .menu-hamburguer
+    + .menu-principal {
+        display: block;
+    }
+
+    .menu-principal > ul {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .menu-principal a {
+        display: block;
+        padding: var(--espaco-1);
+    }
+
+    .submenu {
+        position: static;
+
+        display: block;
+
+        border: 0;
+        box-shadow: none;
+
+        padding-left: var(--espaco-2);
+    }
+}

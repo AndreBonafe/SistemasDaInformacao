@@ -1,0 +1,183 @@
+.hero {
+    padding-block: var(--espaco-6);
+}
+
+.hero__conteudo {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: var(--espaco-5);
+}
+
+.hero__etiqueta {
+    display: inline-block;
+
+    margin-bottom: var(--espaco-2);
+
+    padding:
+        0.35rem
+        0.75rem;
+
+    background-color: var(--cor-secundaria-clara);
+
+    color: var(--cor-primaria-escura);
+
+    border-radius: 999px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.hero h1 {
+    margin-bottom: var(--espaco-3);
+}
+
+.hero h1 span {
+    color: var(--cor-primaria);
+}
+
+.hero__descricao {
+    max-width: 600px;
+
+    margin-bottom: var(--espaco-3);
+
+    font-size: 1.1rem;
+}
+
+.hero__acoes {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: var(--espaco-2);
+}
+
+.hero__imagem img {
+    width: 100%;
+
+    aspect-ratio: 4 / 5;
+
+    object-fit: cover;
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--sombra-media);
+}
+
+.etapas {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: var(--espaco-3);
+}
+
+.card-etapa {
+    position: relative;
+
+    padding: var(--espaco-3);
+
+    background-color: var(--cor-superficie);
+
+    border:
+        1px solid
+        var(--cor-borda);
+
+    border-radius: var(--radius-md);
+
+    box-shadow: var(--sombra-suave);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.card-etapa:hover {
+    transform: translateY(-6px);
+
+    box-shadow: var(--sombra-media);
+}
+
+.card-etapa__numero {
+    display: inline-block;
+
+    margin-bottom: var(--espaco-2);
+
+    color: var(--cor-primaria);
+
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+
+.contato {
+    padding-block: var(--espaco-5);
+
+    background-color: var(--cor-primaria-escura);
+}
+
+.contato__conteudo {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: var(--espaco-4);
+}
+
+.contato h2,
+.contato p,
+.contato address,
+.contato a,
+.contato span {
+    color: white;
+}
+
+.contato address {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--espaco-1);
+
+    font-style: normal;
+}
+
+.rodape {
+    padding-block: var(--espaco-3);
+
+    background: #251a56;
+
+    text-align: center;
+}
+
+.rodape p {
+    margin: 0;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .hero__conteudo {
+        grid-template-columns: 1fr;
+    }
+
+    .hero__imagem {
+        order: -1;
+    }
+
+    .hero__imagem img {
+        aspect-ratio: 16 / 10;
+    }
+
+    .etapas {
+        grid-template-columns: 1fr;
+    }
+
+    .contato__conteudo {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
