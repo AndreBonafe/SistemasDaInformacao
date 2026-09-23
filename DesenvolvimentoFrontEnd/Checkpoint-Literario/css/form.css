@@ -1,0 +1,246 @@
+.cadastro-hero {
+    padding-block: var(--espaco-6);
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--cor-secundaria-clara),
+            var(--cor-fundo)
+        );
+}
+
+.cadastro-hero__conteudo {
+    max-width: 760px;
+}
+
+.cadastro-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(240px, 0.7fr)
+        minmax(0, 1.5fr);
+
+    align-items: start;
+
+    gap: var(--espaco-5);
+}
+
+.cadastro-info {
+    position: sticky;
+    top: 110px;
+
+    padding: var(--espaco-3);
+
+    background-color: var(--cor-secundaria-clara);
+
+    border-radius: var(--radius-md);
+}
+
+.cadastro-info ul {
+    display: grid;
+    gap: var(--espaco-1);
+
+    padding-left: 1.25rem;
+}
+
+.cadastro-info li::marker {
+    color: var(--cor-primaria);
+}
+
+.formulario {
+    display: grid;
+    gap: var(--espaco-3);
+
+    padding: var(--espaco-4);
+
+    background-color: var(--cor-superficie);
+
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--sombra-suave);
+}
+
+.formulario fieldset {
+    display: grid;
+    gap: var(--espaco-3);
+
+    margin: 0;
+    padding: var(--espaco-3);
+
+    border: 1px solid var(--cor-borda);
+    border-radius: var(--radius-md);
+}
+
+.formulario legend {
+    padding-inline: var(--espaco-1);
+
+    color: var(--cor-primaria-escura);
+
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.form-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: var(--espaco-2);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+
+    gap: 0.4rem;
+}
+
+.campo--duplo {
+    grid-column: span 2;
+}
+
+.campo label {
+    font-weight: 600;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+    width: 100%;
+
+    padding: 0.8rem 0.9rem;
+
+    border:
+        2px solid
+        var(--cor-borda);
+
+    border-radius: var(--radius-sm);
+
+    background-color: var(--cor-superficie);
+    color: var(--cor-texto);
+
+    font: inherit;
+
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.campo textarea {
+    resize: vertical;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+    border-color: var(--cor-primaria);
+
+    outline: none;
+
+    box-shadow:
+        0 0 0 3px
+        rgba(91, 63, 214, 0.14);
+}
+
+.campo input:valid:not(:placeholder-shown) {
+    border-color: var(--cor-sucesso);
+}
+
+.campo input:invalid:not(:placeholder-shown) {
+    border-color: var(--cor-destaque);
+}
+
+.opcoes {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: var(--espaco-2);
+}
+
+.opcao {
+    display: flex;
+    align-items: center;
+
+    gap: var(--espaco-1);
+
+    padding: var(--espaco-2);
+
+    border: 2px solid var(--cor-borda);
+    border-radius: var(--radius-sm);
+
+    cursor: pointer;
+
+    transition:
+        border-color 0.2s ease,
+        background-color 0.2s ease;
+}
+
+.opcao:hover {
+    border-color: var(--cor-primaria);
+}
+
+.opcao:has(input:checked) {
+    border-color: var(--cor-primaria);
+
+    background-color:
+        var(--cor-secundaria-clara);
+}
+
+.opcao input {
+    accent-color: var(--cor-primaria);
+}
+
+.consentimento {
+    display: flex;
+    align-items: flex-start;
+
+    gap: var(--espaco-1);
+
+    cursor: pointer;
+}
+
+.consentimento input {
+    margin-top: 0.3rem;
+
+    accent-color: var(--cor-primaria);
+}
+
+.formulario > .botao {
+    justify-self: start;
+}
+
+@media (max-width: 900px) {
+    .cadastro-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .cadastro-info {
+        position: static;
+    }
+}
+
+@media (max-width: 600px) {
+    .formulario {
+        padding: var(--espaco-2);
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .campo--duplo {
+        grid-column: auto;
+    }
+
+    .opcoes {
+        grid-template-columns: 1fr;
+    }
+
+    .formulario > .botao {
+        width: 100%;
+    }
+}
