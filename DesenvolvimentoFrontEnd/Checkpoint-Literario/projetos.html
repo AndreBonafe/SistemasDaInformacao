@@ -1,217 +1,304 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<link rel="stylesheet" href="style.css">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="description"
-        content="Conheça os projetos da Checkpoint Literário e descubra como participar como voluntário ou apoiar a ONG com doações."
-    >
+	<meta name="description"
+		content="Conheça os projetos da Checkpoint Literário e descubra como participar como voluntário ou apoiar a ONG com doações.">
 
-    <title>Projetos | Checkpoint Literário</title>
+	<title>Projetos | Checkpoint Literário</title>
+
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <a href="index.html" aria-label="Página inicial da Checkpoint Literário">
-            <img
-                src="./imagens/logo-checkpoint-literario.svg"
-                alt="Checkpoint Literário"
-                width="260"
-            >
-        </a>
+	<header class="cabecalho">
+		<div class="container cabecalho__conteudo">
 
-        <label for="menu-toggle" class="menu-hamburguer">
-            ☰
-        </label>
+			<a href="index.html" class="logo" aria-label="Página inicial da Checkpoint Literário">
+				<img src="./imagens/logo-checkpoint-literario.svg" alt="Checkpoint Literário">
+			</a>
 
-        <nav class="menu-principal">
-            <ul>
-                <li><a href="index.html">Início</a></li>
+			<input type="checkbox" id="menu-toggle" class="menu-toggle">
 
-                <li class="tem-submenu">
-                    <a href="projetos.html">Projetos</a>
+			<label for="menu-toggle" class="menu-hamburguer" aria-label="Abrir ou fechar menu de navegação">
+				☰
+			</label>
 
-                    <ul class="submenu">
-                        <li><a href="projetos.html#leitura">Leitura</a></li>
-                        <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
-                        <li><a href="projetos.html#doacoes">Doações</a></li>
-                    </ul>
-                </li>
+			<nav class="menu-principal" aria-label="Navegação principal">
+				<ul>
+					<li>
+						<a href="index.html">
+							Início
+						</a>
+					</li>
 
-                <li><a href="cadastro.html">Participe</a></li>
-            </ul>
-        </nav>
-    </header>
+					<li class="tem-submenu">
+						<a href="projetos.html" aria-current="page">
+							Projetos
+						</a>
 
-    <main>
+						<ul class="submenu">
+							<li>
+								<a href="#leitura">
+									Leitura
+								</a>
+							</li>
 
-        <section>
-            <h1>Nossos projetos</h1>
+							<li>
+								<a href="#voluntariado">
+									Voluntariado
+								</a>
+							</li>
 
-            <p>
-                A Checkpoint Literário desenvolve atividades que unem leitura,
-                escrita, convivência e acesso a videogames.
-            </p>
+							<li>
+								<a href="#doacoes">
+									Doações
+								</a>
+							</li>
+						</ul>
+					</li>
 
-            <p>
-                Conheça nossas principais frentes de atuação e descubra como
-                você também pode fazer parte dessa iniciativa.
-            </p>
-        </section>
+					<li>
+						<a href="cadastro.html">
+							Participe
+						</a>
+					</li>
+				</ul>
+			</nav>
 
-        <section>
-            <span class="badge badge-leitura">Leitura</span>
-            <h2>Checkpoint de Leitura</h2>
+		</div>
+	</header>
 
-            <p>
-                O Checkpoint de Leitura é a principal atividade da organização.
-                Nele, crianças e adolescentes escolhem uma obra disponível na
-                biblioteca e realizam a leitura de um capítulo.
-            </p>
+	<main>
 
-            <p>
-                Depois da leitura, cada participante registra com suas próprias
-                palavras o que compreendeu do conteúdo. Após concluir essa etapa,
-                recebe acesso às estações de videogame durante um período
-                determinado.
-            </p>
+		<section class="projetos-hero">
+			<div class="container projetos-hero__conteudo">
 
-            <ul>
-                <li>Escolher um livro disponível na biblioteca;</li>
-                <li>Ler um capítulo no próprio ritmo;</li>
-                <li>Registrar a compreensão da leitura por escrito;</li>
-                <li>Utilizar as estações de videogame após o checkpoint.</li>
-            </ul>
+				<p class="secao__etiqueta">
+					Nossas iniciativas
+				</p>
 
-            <picture>
-                <source
-                    srcset="./imagens/leitura.webp"
-                    type="image/webp"
-                >
+				<h1>Nossos projetos</h1>
 
-                <img
-                    src="./imagens/leitura.jpg"
-                    alt="Livro aberto ao lado de controles de videogame"
-                    width="600"
-                >
-            </picture>
-        </section>
+				<p>
+					A Checkpoint Literário desenvolve atividades que unem
+					leitura, escrita, convivência e acesso a videogames.
+				</p>
 
-        <section>
-            <span class="badge badge-voluntariado">Voluntariado</span>
-            <h2>Voluntariado</h2>
+				<p>
+					Conheça nossas principais frentes de atuação e descubra
+					como você também pode fazer parte dessa iniciativa.
+				</p>
 
-            <p>
-                Voluntários ajudam a manter as atividades da Checkpoint
-                Literário e podem colaborar em diferentes áreas de acordo
-                com seus interesses e conhecimentos.
-            </p>
+			</div>
+		</section>
 
-            <article>
-                <h3>Mediação de leitura</h3>
+		<section id="leitura" class="secao">
+			<div class="container projeto-destaque">
 
-                <p>
-                    Apoia os participantes na escolha de livros, interpretação
-                    dos textos e desenvolvimento das atividades de leitura.
-                </p>
-            </article>
+				<div class="projeto-destaque__texto">
 
-            <article>
-                <h3>Monitoria de videogames</h3>
+					<span class="badge badge-leitura">
+						Leitura
+					</span>
 
-                <p>
-                    Auxilia na organização das estações de jogos, orienta os
-                    participantes e ajuda a garantir o uso adequado dos
-                    equipamentos.
-                </p>
-            </article>
+					<h2>Checkpoint de Leitura</h2>
 
-            <article>
-                <h3>Biblioteca</h3>
+					<p>
+						O Checkpoint de Leitura é a principal atividade da
+						organização. Nele, crianças e adolescentes escolhem
+						uma obra disponível na biblioteca e realizam a leitura
+						de um capítulo.
+					</p>
 
-                <p>
-                    Colabora na organização do acervo, registro de empréstimos
-                    e conservação de livros, quadrinhos e mangás.
-                </p>
-            </article>
+					<p>
+						Depois da leitura, cada participante registra com suas
+						próprias palavras o que compreendeu do conteúdo. Após
+						concluir essa etapa, recebe acesso às estações de
+						videogame durante um período determinado.
+					</p>
 
-            <article>
-                <h3>Manutenção de equipamentos</h3>
+					<ul class="lista-projeto">
+						<li>Escolher um livro disponível na biblioteca;</li>
+						<li>Ler um capítulo no próprio ritmo;</li>
+						<li>Registrar a compreensão da leitura por escrito;</li>
+						<li>Utilizar as estações de videogame após o checkpoint.</li>
+					</ul>
 
-                <p>
-                    Ajuda na limpeza, manutenção e organização de consoles,
-                    controles, televisores e outros equipamentos utilizados
-                    nas atividades.
-                </p>
-            </article>
-        </section>
+				</div>
 
-        <section>
-            <h2>Doe uma História</h2>
-            <span class="badge badge-doacao">Doação</span>
+				<picture class="projeto-destaque__imagem">
+					<source srcset="./imagens/leitura.webp" type="image/webp">
 
-            <p>
-                A campanha Doe uma História recebe materiais que ajudam a
-                ampliar a biblioteca e manter as estações de videogame da ONG.
-            </p>
+					<img src="./imagens/leitura.jpg" alt="Livro aberto ao lado de controles de videogame">
+				</picture>
 
-            <p>
-                Podem ser doados itens novos ou usados, desde que estejam em
-                boas condições de utilização.
-            </p>
+			</div>
+		</section>
 
-            <ul>
-                <li>Livros infantis e juvenis;</li>
-                <li>Quadrinhos e mangás;</li>
-                <li>Consoles de videogame;</li>
-                <li>Controles e acessórios;</li>
-                <li>Jogos em mídia física;</li>
-                <li>Televisores e monitores em funcionamento.</li>
-            </ul>
-        </section>
+		<section id="voluntariado" class="secao secao--destaque">
+			<div class="container">
 
-        <section>
-            <h2>Contribuição financeira</h2>
+				<header class="secao__cabecalho">
 
-            <p>
-                As contribuições financeiras ajudam a custear a manutenção do
-                espaço, aquisição de livros, conservação dos equipamentos e
-                realização das atividades da organização.
-            </p>
+					<span class="badge badge-voluntariado">
+						Voluntariado
+					</span>
 
-            <p>
-                Interessados em apoiar financeiramente a Checkpoint Literário
-                podem realizar um cadastro para entrar em contato com a equipe.
-            </p>
-        </section>
+					<h2>Voluntariado</h2>
 
-        <section>
-            <h2>Como participar</h2>
+					<p>
+						Voluntários ajudam a manter as atividades da
+						Checkpoint Literário e podem colaborar em diferentes
+						áreas de acordo com seus interesses e conhecimentos.
+					</p>
 
-            <p>
-                Se você deseja atuar como voluntário, realizar uma doação ou
-                apoiar a organização de outra forma, preencha nosso formulário
-                de cadastro.
-            </p>
+				</header>
 
-            <a href="cadastro.html">
-                Quero participar
-            </a>
-        </section>
+				<div class="projetos-grid">
 
-    </main>
+					<article class="card-projeto">
+						<h3>Mediação de leitura</h3>
 
-    <footer>
-        <p>
-            &copy; 2026 Checkpoint Literário.
-            Todos os direitos reservados.
-        </p>
-    </footer>
+						<p>
+							Apoia os participantes na escolha de livros,
+							interpretação dos textos e desenvolvimento das
+							atividades de leitura.
+						</p>
+					</article>
+
+					<article class="card-projeto">
+						<h3>Monitoria de videogames</h3>
+
+						<p>
+							Auxilia na organização das estações de jogos,
+							orienta os participantes e ajuda a garantir o uso
+							adequado dos equipamentos.
+						</p>
+					</article>
+
+					<article class="card-projeto">
+						<h3>Biblioteca</h3>
+
+						<p>
+							Colabora na organização do acervo, registro de
+							empréstimos e conservação de livros, quadrinhos
+							e mangás.
+						</p>
+					</article>
+
+					<article class="card-projeto">
+						<h3>Manutenção de equipamentos</h3>
+
+						<p>
+							Ajuda na limpeza, manutenção e organização de
+							consoles, controles, televisores e outros
+							equipamentos utilizados nas atividades.
+						</p>
+					</article>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section id="doacoes" class="secao">
+			<div class="container projetos-grid projetos-grid--duplo">
+
+				<article class="card-projeto card-projeto">
+
+					<span class="badge badge-doacao">
+						Doação
+					</span>
+
+					<h2>Doe uma História</h2>
+
+					<p>
+						A campanha Doe uma História recebe materiais que
+						ajudam a ampliar a biblioteca e manter as estações
+						de videogame da ONG.
+					</p>
+
+					<p>
+						Podem ser doados itens novos ou usados, desde que
+						estejam em boas condições de utilização.
+					</p>
+
+					<ul class="lista-projeto">
+						<li>Livros infantis e juvenis;</li>
+						<li>Quadrinhos e mangás;</li>
+						<li>Consoles de videogame;</li>
+						<li>Controles e acessórios;</li>
+						<li>Jogos em mídia física;</li>
+						<li>Televisores e monitores em funcionamento.</li>
+					</ul>
+
+				</article>
+
+				<article class="card-projeto">
+
+					<span class="badge badge-doacao">
+						Apoio financeiro
+					</span>
+
+					<h2>Contribuição financeira</h2>
+
+					<p>
+						As contribuições financeiras ajudam a custear a
+						manutenção do espaço, aquisição de livros,
+						conservação dos equipamentos e realização das
+						atividades da organização.
+					</p>
+
+					<p>
+						Interessados em apoiar financeiramente a Checkpoint
+						Literário podem realizar um cadastro para entrar em
+						contato com a equipe.
+					</p>
+
+				</article>
+
+			</div>
+		</section>
+
+		<section class="projetos-cta">
+			<div class="container projetos-cta__conteudo">
+
+				<div>
+					<p class="secao__etiqueta">
+						Faça parte
+					</p>
+
+					<h2>Como participar</h2>
+
+					<p>
+						Se você deseja atuar como voluntário, realizar uma
+						doação ou apoiar a organização de outra forma,
+						preencha nosso formulário de cadastro.
+					</p>
+				</div>
+
+				<a href="cadastro.html" class="botao botao--primario">
+					Quero participar
+				</a>
+
+			</div>
+		</section>
+
+	</main>
+
+	<footer class="rodape">
+		<div class="container">
+			<p>
+				&copy; 2026 Checkpoint Literário.
+				Todos os direitos reservados.
+			</p>
+		</div>
+	</footer>
 
 </body>
 
