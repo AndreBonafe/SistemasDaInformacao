@@ -1,0 +1,33 @@
+:root {
+    /* Cores principais */
+    --cor-primaria: #5B3FD6;
+    --cor-primaria-escura: #3F2AA3;
+    --cor-secundaria: #F2B84B;
+    --cor-secundaria-escura: #C98D1F;
+
+    /* Cores de apoio */
+    --cor-destaque: #E85D75;
+    --cor-sucesso: #2E8B57;
+
+    /* Tons neutros */
+    --cor-fundo: #FFFDF8;
+    --cor-superficie: #FFFFFF;
+    --cor-texto: #242424;
+    --cor-texto-suave: #666666;
+    --cor-borda: #D9D9D9;
+
+    /* Tipografia */
+    --fonte-xs: 0.875rem;
+    --fonte-sm: 1rem;
+    --fonte-md: 1.25rem;
+    --fonte-lg: 1.75rem;
+    --fonte-xl: 2.5rem;
+
+    /* Espaçamento modular */
+    --espaco-1: 0.25rem;
+    --espaco-2: 0.5rem;
+    --espaco-3: 1rem;
+    --espaco-4: 1.5rem;
+    --espaco-5: 2rem;
+    --espaco-6: 3rem;
+}
