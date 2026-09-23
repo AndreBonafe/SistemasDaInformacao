@@ -3,9 +3,9 @@ import { Home } from "./views/home.js";
 import { Projetos } from "./views/projetos.js";
 
 const routes = {
-  "#/inicio": Home,
-  "#/cadastro": Cadastro,
-  "#/projetos": Projetos
+  "inicio": Home,
+  "cadastro": Cadastro,
+  "projetos": Projetos
 }
 
 export function router(rota) {

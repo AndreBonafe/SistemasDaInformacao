@@ -51,6 +51,10 @@
     color: var(--cor-primaria);
 }
 
+.menu-principal a[aria-current="location"] {
+    color: var(--cor-secundaria);
+}
+
 .menu-toggle {
     display: none;
 }
