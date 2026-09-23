@@ -1,0 +1,57 @@
+#menu-toggle {
+    display: none;
+}
+
+.menu-hamburguer {
+    display: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: black;
+}
+
+.menu-principal > ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.tem-submenu {
+    position: relative;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    list-style: none;
+    background: var(--cor-superficie);
+    padding: var(--espaco-2);
+}
+
+.tem-submenu:hover .submenu,
+.tem-submenu:focus-within .submenu {
+    display: block;
+}
+
+@media (max-width: 767px) {
+    .menu-hamburguer {
+        display: block;
+    }
+
+    .menu-principal {
+        display: none;
+    }
+
+    #menu-toggle:checked + .menu-hamburguer + .menu-principal {
+        display: block;
+    }
+
+    .menu-principal > ul {
+        flex-direction: column;
+    }
+
+    .submenu {
+        position: static;
+    }
+}

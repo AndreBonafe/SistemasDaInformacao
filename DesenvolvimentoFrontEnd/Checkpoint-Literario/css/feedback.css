@@ -1,0 +1,70 @@
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.badge-leitura {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-texto);
+}
+
+.badge-voluntariado {
+    background-color: var(--cor-primaria);
+    color: white;
+}
+
+.badge-doacao {
+    background-color: var(--cor-sucesso);
+    color: white;
+}
+
+.alerta {
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    border-left: 5px solid;
+}
+
+.alerta-sucesso {
+    background-color: #eaf7ef;
+    border-color: var(--cor-sucesso);
+    color: #1f5f3c;
+}
+
+.alerta-erro {
+    background-color: #fdecef;
+    border-color: var(--cor-destaque);
+    color: #8a2438;
+}
+
+.toast {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    max-width: 320px;
+    padding: 1rem 1.25rem;
+    border-radius: 8px;
+    background-color: var(--cor-texto);
+    color: white;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.55);
+}
+
+.modal {
+    width: min(90%, 500px);
+    background-color: var(--cor-superficie);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}

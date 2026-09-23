@@ -25,21 +25,25 @@
             >
         </a>
 
-        <nav aria-label="Navegação principal">
+        <label for="menu-toggle" class="menu-hamburguer">
+            ☰
+        </label>
+
+        <nav class="menu-principal">
             <ul>
-                <li>
-                    <a href="index.html">Início</a>
+                <li><a href="index.html">Início</a></li>
+
+                <li class="tem-submenu">
+                    <a href="projetos.html">Projetos</a>
+
+                    <ul class="submenu">
+                        <li><a href="projetos.html#leitura">Leitura</a></li>
+                        <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+                        <li><a href="projetos.html#doacoes">Doações</a></li>
+                    </ul>
                 </li>
 
-                <li>
-                    <a href="projetos.html" aria-current="page">
-                        Projetos
-                    </a>
-                </li>
-
-                <li>
-                    <a href="cadastro.html">Participe</a>
-                </li>
+                <li><a href="cadastro.html">Participe</a></li>
             </ul>
         </nav>
     </header>
@@ -61,6 +65,7 @@
         </section>
 
         <section>
+            <span class="badge badge-leitura">Leitura</span>
             <h2>Checkpoint de Leitura</h2>
 
             <p>
@@ -98,6 +103,7 @@
         </section>
 
         <section>
+            <span class="badge badge-voluntariado">Voluntariado</span>
             <h2>Voluntariado</h2>
 
             <p>
@@ -147,6 +153,7 @@
 
         <section>
             <h2>Doe uma História</h2>
+            <span class="badge badge-doacao">Doação</span>
 
             <p>
                 A campanha Doe uma História recebe materiais que ajudam a

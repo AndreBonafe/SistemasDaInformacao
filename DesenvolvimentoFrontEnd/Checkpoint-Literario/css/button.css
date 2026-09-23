@@ -1,0 +1,64 @@
+.botao {
+    background-color: var(--cor-primaria);
+    color: white;
+    border: 2px solid var(--cor-primaria);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        box-shadow 0.2s ease,
+        transform 0.2s ease;
+}
+
+.botao:hover {
+    background-color: var(--cor-primaria-escura);
+    border-color: var(--cor-primaria-escura);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.botao:focus-visible {
+    outline: 3px solid var(--cor-secundaria);
+    outline-offset: 3px;
+}
+
+.botao:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.botao:disabled {
+    background-color: var(--cor-borda);
+    border-color: var(--cor-borda);
+    color: var(--cor-texto-suave);
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+input,
+select,
+textarea {
+    border: 2px solid var(--cor-borda);
+    border-radius: 8px;
+    padding: 0.75rem;
+    transition:
+        border-color 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--cor-primaria);
+    box-shadow: 0 0 0 3px rgba(91, 63, 214, 0.15);
+    outline: none;
+}
+
+input:valid:not(:placeholder-shown) {
+    border-color: var(--cor-sucesso);
+}
+
+input:invalid:not(:placeholder-shown) {
+    border-color: var(--cor-destaque);
+}

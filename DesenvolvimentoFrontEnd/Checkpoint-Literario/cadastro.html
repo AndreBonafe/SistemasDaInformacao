@@ -25,21 +25,25 @@
             >
         </a>
 
-        <nav aria-label="Navegação principal">
+        <label for="menu-toggle" class="menu-hamburguer">
+            ☰
+        </label>
+
+        <nav class="menu-principal">
             <ul>
-                <li>
-                    <a href="index.html">Início</a>
-                </li>
+                <li><a href="index.html">Início</a></li>
 
-                <li>
+                <li class="tem-submenu">
                     <a href="projetos.html">Projetos</a>
+
+                    <ul class="submenu">
+                        <li><a href="projetos.html#leitura">Leitura</a></li>
+                        <li><a href="projetos.html#voluntariado">Voluntariado</a></li>
+                        <li><a href="projetos.html#doacoes">Doações</a></li>
+                    </ul>
                 </li>
 
-                <li>
-                    <a href="cadastro.html" aria-current="page">
-                        Participe
-                    </a>
-                </li>
+                <li><a href="cadastro.html">Participe</a></li>
             </ul>
         </nav>
     </header>
@@ -330,7 +334,7 @@
                     </label>
                 </p>
 
-                <button type="submit">
+                <button class="botao" type="submit">
                     Enviar cadastro
                 </button>
 
