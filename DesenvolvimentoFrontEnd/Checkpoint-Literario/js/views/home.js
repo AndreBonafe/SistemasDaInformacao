@@ -21,11 +21,11 @@ export function Home() {
             </p>
 
             <div class="hero__acoes">
-              <a href="cadastro.html" class="botao botao--primario">
+              <a href="#/cadastro" class="botao botao--primario">
                 Quero participar
               </a>
 
-              <a href="projetos.html" class="botao botao--secundario">
+              <a href="#/projetos" class="botao botao--secundario">
                 Conheça os projetos
               </a>
             </div>
@@ -141,7 +141,7 @@ export function Home() {
               habilidades de convivência e cooperação.
             </p>
 
-            <a href="projetos.html" class="botao botao--secundario">
+            <a href="#/projetos" class="botao botao--secundario">
               Veja nossas iniciativas
             </a>
           </div>
