@@ -1,0 +1,19 @@
+# Executáveis compilados
+*.o
+*.out
+*.exe
+
+# Binário do projeto
+**/cardapio
+
+# Arquivos de debug
+*.core
+core
+
+# Configurações locais
+.vscode/
+.idea/
+
+# Arquivos temporários
+*~
+*.swp
