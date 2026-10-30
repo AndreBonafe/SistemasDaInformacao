@@ -1,0 +1,27 @@
+# Executaveis e arquivos compilados
+controle-almocos
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+
+# Arquivos de debug
+*.core
+core
+*.dSYM/
+
+# Arquivos temporarios
+*~
+*.swp
+*.swo
+*.tmp
+
+# Configuracoes locais de IDE
+.vscode/
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
