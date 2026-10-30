@@ -1,0 +1,29 @@
+# Arquivos compilados em C
+*.o
+*.obj
+*.out
+*.exe
+*.a
+*.so
+
+# Executável do projeto
+cesta-basica
+
+# Arquivos de debug
+*.core
+core
+*.dSYM/
+
+# Arquivos temporários
+*~
+*.swp
+*.swo
+*.tmp
+
+# Configurações locais de IDEs
+.vscode/
+.idea/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
