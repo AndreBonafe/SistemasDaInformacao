@@ -59,5 +59,12 @@ int main(void)
 
   } while (opcao != 5);
 
+  printf("\n====================================\n");
+  printf("       RESUMO DO PEDIDO             \n");
+  printf("====================================\n");
+  printf("Total do pedido: R$ %.2f\n", total);
+  printf("Obrigado pela preferencia!\n");
+  printf("Sistema encerrado com sucesso.\n");
+
   return 0;
 }
